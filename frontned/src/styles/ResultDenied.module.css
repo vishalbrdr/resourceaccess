@@ -1,0 +1,97 @@
+.notifications-container {
+  width: 520px;
+  height: auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 2rem;
+  border: solid red;
+  overflow: hidden;
+  box-shadow: rgba(255, 0, 0, 0.25) 0px 54px 55px,
+    rgba(255, 89, 67, 0.12) 0px -12px 30px, rgba(244, 43, 16, 0.12) 0px 4px 6px,
+    rgba(222, 117, 36, 0.17) 0px 12px 13px, rgba(200, 69, 40, 0.09) 0px -3px 5px;
+}
+.Main {
+  display: flex;
+  justify-content: center;
+  margin-block: -15rem 10rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+  color: red;
+}
+
+.success {
+  padding: 1rem;
+  border-radius: 0.375rem;
+  background-color: rgb(255, 210, 196);
+}
+
+.succes-svg {
+  color: rgb(247, 152, 0);
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.success-prompt-wrap {
+  margin-left: 0.75rem;
+}
+
+.success-prompt-heading {
+  font-weight: bold;
+  color: rgb(101, 39, 22);
+}
+
+.success-prompt-prompt {
+  margin-top: 0.5rem;
+  color: rgb(128, 39, 21);
+}
+
+.success-button-container {
+  display: flex;
+  margin-top: 0.875rem;
+  margin-bottom: -0.375rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.success-button-main {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: transparent;
+  color: rgb(101, 26, 22);
+  line-height: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: 2rem;
+  margin-block: 1rem;
+}
+
+.success-button-main:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.success-button-secondary {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 0.75rem;
+  background-color: transparent;
+  color: #ff754e;
+  line-height: 1.25rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: 2rem;
+  margin-block: 1rem;
+}

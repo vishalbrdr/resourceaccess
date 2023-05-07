@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <nav class="nav">
+      <div class="container">
+          <div class="logo">
+              <a href="#">XYZ Firm Pvt. Ltd.</a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+      </div>
+  </nav>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}" />
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <div class="login-box">
+  <h2>Resource Access</h2>
+  <form action="{{ url_for('predict')}}" method="post">
+    <div class="user-box">
+      <input type="text" name="Resource" required="">
+      <label>Resource ID</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="Manager" required="">
+      <label>Manager ID</label>
+    </div>
+    <div class="user-box">
+        <input type="text" name="Rollup1" required="">
+        <label>Rollup 1 Code</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="Rollup2" required="">
+        <label>Rollup 2 Code</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="Department" required="">
+        <label>Department ID</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="Title" required="">
+        <label>Role Title ID</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="Family" required="">
+        <label>Role Family Description Code</label>
+      </div>
+      <div class="user-box">
+        <input type="text" name="FamilyID" required="">
+        <label>Role Family ID</label>
+      </div>
+    <button type="submit">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Request
+    </button>
+  </form>
+ 
+</div>
+<!-- <div class="footer-padding"></div>
+<div class="footer">
+  <p>Made with ❤️ by Kuldeep</p>
+</div> -->
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script >
+  $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
+
+</script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+</body>
+</html>
